@@ -1,0 +1,39 @@
+[all:vars]
+ansible_connection=ssh
+ansible_port=42006
+ansible_ssh_common_args='-o StrictHostKeyChecking=no'
+
+[frontend:vars]
+ansible_connection=ssh
+ansible_port=42006
+ansible_ssh_common_args='-o StrictHostKeyChecking=no'
+
+
+
+[frontend]
+#Raju ansible_host=192.168.1.214  ansible_ssh_user=DESKTOP-ECJFTFF  ansible_ssh_pass='Karthika@123' ansible_connection=ssh ansible_port=22
+
+#AshwiniTerminal ansible_host=172.31.69.134  ansible_ssh_user=mauryaashwiniho  ansible_ssh_pass='winiho0A@r6eum' 
+
+MiniTerminal ansible_host=172.31.79.87  ansible_ssh_user=minimoljayanthi  ansible_ssh_pass='yanthi0A@tzm6r'
+
+
+[frontend_win:vars]
+ansible_connection=winrm 
+ansible_port=5985 
+ansible_winrm_server_cert_validation=ignore
+
+[frontend_win]
+Azure ansible_host=20.55.9.109 ansible_user=ajay.devopstraiers1 ansible_password='Hnd3YCTlQBvwHdUEcUEwxER12II1P30='
+
+#server1
+#server2
+#server3
+
+#[backend]
+#server4
+#server5
+
+#[database]
+#server6
+
